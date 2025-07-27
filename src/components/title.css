@@ -1,0 +1,55 @@
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.starting-info {
+    width: 350px;
+}
+
+.starting-info h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: hsl(255, 11%, 22%);
+}
+
+.starting-info p {
+    color: hsl(257, 7%, 63%);
+}
+
+.working-picture img {
+    width: 500px;
+    margin-top: 50px;
+    margin-left: 200px;
+}
+
+.starting-info button {
+    border: none;
+    padding: 10px 30px;
+    border-radius: 20px;
+    background-color: hsl(180, 66%, 49%);
+    cursor: pointer;
+    color: white;
+}
+
+.starting-info button:hover {
+    opacity: 0.5;
+}
+
+@media (max-width: 680px) {
+    .title {
+        flex-direction: column-reverse;
+        text-align: center;
+      }
+    
+      .working-picture img {
+        width: 90%;
+        margin: 0;
+      }
+    
+      .starting-info {
+        width: 90%;
+        text-align: center;
+      }
+}

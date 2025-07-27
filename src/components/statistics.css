@@ -1,0 +1,117 @@
+
+.statistics {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 60px 20px;
+    position: relative;
+}
+
+.recognition, .records-title, .custom-title {
+    padding: 10px 20px;
+    width: 300px;
+    background-color: hsl(0, 0%, 75%);
+    height: 200px;
+    z-index: 1;
+}
+
+.statistics img {
+    margin-top: -40px;
+    margin-bottom: 20px;
+    background-color: hsl(257, 27%, 26%);
+    padding: 15px;
+    border-radius: 50%;
+    width: 30px;
+}
+
+.records-title {
+    transform: translateY(30px);
+}
+
+.custom-title {
+    transform: translateY(60px);
+    
+}
+
+.statistics::before {
+    content: "";
+    position: absolute;
+    top: 160px;
+    left: 100px;
+    right: 100px;
+    height: 8px;
+    background: hsl(180, 66%, 49%);
+    z-index: 0;
+  }
+
+.statistics-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.statistics-description {
+    background-color: hsl(0, 0%, 75%);
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.shorten-image {
+    background: url(../assets/images/bg-shorten-desktop.svg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    height: 165px;
+    background-color: hsl(257, 27%, 26%);
+    color: white;
+}
+
+.shorten-image button {
+    padding: 10px 25px;
+    background-color: hsl(180, 66%, 49%);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transform: 0.2s ease;
+    margin-bottom: 30px;
+}
+
+.shorten-image button:hover {
+    background-color: hsl(180, 63%, 62%);
+}
+
+.shorten-image button:active {
+    opacity: 0.7;
+}
+
+@media (max-width: 680px) {
+    .statistics {
+        flex-direction: column;
+        gap: 50px;
+        padding: 30px 10px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 25px;
+    }
+
+    .statistics::before {
+        width: 8px;
+        height: 80%;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .shorten-image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 15px;
+        border-radius: 15px;
+    }
+}

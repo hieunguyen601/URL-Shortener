@@ -1,0 +1,16 @@
+
+.advanced-title {
+    text-align: center;
+}
+
+.advanced-title h2 {
+    font-size: 1.7rem;    
+}
+
+.advanced-title p {
+    color: hsl(257, 7%, 63%);
+    font-size: 15px;
+    width: 350px;
+    display: flex;
+    margin: auto;
+}

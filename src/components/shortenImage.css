@@ -1,0 +1,97 @@
+
+.shortening {
+    background: url(../assets/images/bg-boost-desktop.svg);
+    background-size: cover;
+    background-color: hsl(257, 27%, 26%);
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 60%;
+    margin: 50px auto;
+    border-radius: 10px;
+    padding: 0 30px;
+}
+
+.shortening-input {
+    width: 76%;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+}
+
+.shortening button {
+    padding: 17px 30px;
+    border-radius: 10px;
+    background-color: hsl(180, 66%, 49%);
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+.shortening button:hover {
+    background-color: hsl(180, 63%, 62%);
+}
+
+.shortening button:active {
+    opacity: 0.7;
+}
+
+
+.short-url-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 30px
+}
+
+.short-url-link {
+    text-decoration: none;
+    color: hsl(257, 27%, 26%);
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.short-url-link:hover {
+    color: hsl(180, 66%, 49%);
+    text-decoration: underline;
+}
+
+.copy-button {
+    font-size: 18px;
+    padding: 10px 25px;
+    border: none;
+    background-color: hsl(180, 66%, 49%);
+    border-radius: 30px;
+    cursor: pointer;
+    color: white;
+    transform: 0.2s ease;
+}
+
+.copy-button:hover {
+    background-color: hsl(180, 63%, 62%);
+}
+
+.copy-button:active {
+    opacity: 0.7;
+}
+
+@media (max-width: 680px) {
+    .shortening {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        height: auto;
+        gap: 20px;
+        padding: 20px;
+        margin-left: 14px;
+    }
+
+    .shortening-input {
+        width: 100%;
+    }    
+}
